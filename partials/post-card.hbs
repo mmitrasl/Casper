@@ -35,7 +35,7 @@
 
         <footer class="post-card-meta">
 
-            <ul class="author-list">
+            {{!-- <ul class="author-list">
             {{#foreach authors}}
                 <li class="author-list-item">
 
@@ -52,8 +52,10 @@
                     {{/if}}
                 </li>
             {{/foreach}}
-            </ul>
+            </ul> --}}
 
+            <time class="date-stamp" datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMMM YYYY"}}</time>
+            
             <span class="reading-time">{{reading_time}}</span>
 
         </footer>
